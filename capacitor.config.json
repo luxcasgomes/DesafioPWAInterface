@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "DesafioPWA",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
