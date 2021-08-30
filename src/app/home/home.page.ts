@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements DoCheck{
 
-  constructor() {}
+  pesquisa:string;
+
+  constructor() {
+    console.log("const",this.pesquisa)
+  }
+  ngDoCheck(){
+  }
 
 }

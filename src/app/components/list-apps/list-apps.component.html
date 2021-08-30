@@ -1,0 +1,56 @@
+<app-skeleton-component *ngIf="displaySkeletons"></app-skeleton-component>
+
+<div class="content-apps" *ngIf="!displaySkeletons">
+  <h3>Jogos</h3>
+  <div id="content">
+    <div class="card-app" *ngFor="let app of aplicativo" [style.display]="app.tipo == 'jogo' ? 'block': 'none'" (click)="openModalApp(app)">
+      <div class="display-card">
+        <header>
+          <img src="{{app.image}}" alt="">
+        </header>
+        <div class="content">
+          <img src="{{app.icon}}" alt="">
+          <div class="labels">
+            <p class="name"> {{app.name}}</p>
+            <p class="dev">{{app.dev}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3>Entretenimento</h3>
+  <div id="content">
+    <div class="card-app" *ngFor="let app of aplicativo"
+      [style.display]="app.tipo == 'entretenimento' ? 'block': 'none'" (click)="openModalApp(app)">
+      <div class="display-card">
+        <header>
+          <img src="{{app.image}}" alt="">
+        </header>
+        <div class="content">
+          <img src="{{app.icon}}" alt="">
+          <div class="labels">
+            <p class="name"> {{app.name}}</p>
+            <p class="dev">{{app.dev}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3>Alimentação</h3>
+  <div id="content">
+    <div class="card-app" *ngFor="let app of aplicativo" [style.display]="app.tipo == 'alimentacao' ? 'block': 'none'" (click)="openModalApp(app)">
+      <div class="display-card">
+        <header>
+          <img src="{{app.image}}" alt="">
+        </header>
+        <div class="content">
+          <img src="{{app.icon}}" alt="">
+          <div class="labels">
+            <p class="name"> {{app.name}}</p>
+            <p class="dev">{{app.dev}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

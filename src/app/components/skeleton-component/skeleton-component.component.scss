@@ -1,0 +1,27 @@
+
+.container-skeletons{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.custom-skeleton {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    gap: 10px;
+    .content {
+        display: flex;
+        flex-direction: row;
+
+        gap: 16px;
+
+        width: 100%;
+
+        .labels {
+            width: 148px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
