@@ -15,7 +15,7 @@ export class ModaAppComponent implements OnInit {
   }
 
   ionViewDidEnter(){
-    console.log("ó o id",this.app.id)
+    console.log("ó o id",this.app.image)
   }
 
   deleteApp(){
